@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+}
+
+<h3>Home</h3>
+<hr />
+<select id="ddAssetTypes" asp-items="ViewBag.AssetTypes"></select>
+<hr />
+<div id="uxDisplay">
+    @* Just to initialize view component with assetTypeId of zero (All types) using 1a path*@
+    @await Component.InvokeAsync("AssetsByType", 0)
+</div>
+
+@section Scripts{ 
+    <script>
+        $(document).ready(() => {
+            $("#ddAssetTypes").change(() => {
+                const assetTypeId = $("#ddAssetTypes").val()
+                $.ajax({
+                    method: 'GET',
+                    url: '/Assets/ChosenAssets',
+                    data: { id: assetTypeId }
+                }).done((result, statusText, xhdr) => {
+                    $("#uxDisplay").html(result)
+                });
+            });
+        });
+    </script>
+}
+
