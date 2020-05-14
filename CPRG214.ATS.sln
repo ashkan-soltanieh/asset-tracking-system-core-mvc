@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPRG214.ATS.Data", "CPRG214
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPRG214.ATS.BLL", "CPRG214.ATS.BLL\CPRG214.ATS.BLL.csproj", "{8C8A1173-2DB0-4EC7-BAD7-FD4E3305A386}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPRG214.ATS.AssetTracking", "CPRG214.ATS.AssetTracking\CPRG214.ATS.AssetTracking.csproj", "{3743A161-8970-457E-BA42-71B3167866BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPRG214.ATS.AssetTracking", "CPRG214.ATS.AssetTracking\CPRG214.ATS.AssetTracking.csproj", "{3743A161-8970-457E-BA42-71B3167866BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E9E3A40A-A619-492B-B384-8463C2F24CC9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		snapshot.png = snapshot.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
